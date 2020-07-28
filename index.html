@@ -14,27 +14,27 @@
   </head>
   <body>
     <header class="header-page">
-      <div class="container"><a href="./" class="logo"><span class="web-logo">Web</span> Studio</a>
+      <div class="container main-navi">
+      <a href="./" class="logo"><span class="web-logo">Web</span> Studio</a>
       <nav class="navi">
         <ul class="list menu-navi">
-          <li><a href="./" class="link-navi current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link-navi">Портфолио</a></li>
-          <li><a href="" class="link-navi">Контакты</a></li>
+          <li class="item"></li><a href="./" class="link-navi current">Студия</a></li>
+          <li class="item"></li><a href="./portfolio.html" class="link-navi">Портфолио</a></li>
+          <li class="item"></li><a href="" class="link-navi">Контакты</a></li>
         </ul>
       </nav>
       <ul class="list contacts">
-        <li>
+        <li class="item">
           <a href="mailto:info@example.com" class="contacts-link"
             >info@example.com</a
           >
         </li>
-        <li>
+        <li class="item">
           <a href="tel:+380991111111" class="contacts-link"
-            >+38 099 111 11 11</a>
+            >+38 099 111 11 11</a></li>
+      </ul>
       </div>
       
-        </li>
-      </ul>
       <section class="hero">
         <div class="container">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
@@ -43,14 +43,14 @@
         
       </section>
     </header>
-    <main>
+    <main class="main-page">
       <section class="advantage">
         <div class="container">
         <h2 hidden class="section-title">
           Преимущества работы с Web Studio
         </h2>
-        <ul class="list">
-          <li>
+        <ul class="list adv-flexcont">
+          <li class="adv-element">
             <img src="./images/antenna.svg" alt="антена" />
             <h3 class="feature">Внимание к деталям</h3>
             <p class="feature-text">
@@ -58,7 +58,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="adv-element">
             <img src="./images/clock_1.svg" alt="часы" />
             <h3 class="feature">Пунктуальность</h3>
             <p class="feature-text">
@@ -66,7 +66,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="adv-element">
             <img src="./images/diagram_1.svg" alt="диаграма" />
             <h3 class="feature">Планирование</h3>
             <p class="feature-text">
@@ -74,7 +74,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="adv-element">
             <img src="./images/astronaut_1.svg" alt="астронавт" />
             <h3 class="feature">Современные технологии</h3>
             <p class="feature-text">
@@ -85,11 +85,11 @@
         </ul>
         </div>
       </section>
-      <section>
+      <section class="box-section">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list box-flexcont">
+          <li class="box-element">
             <a href=""
               ><img
                 src="./images/desktop1.jpg"
@@ -99,7 +99,7 @@
             /></a>
             <p class="box">Десктопные приложения</p>
           </li>
-          <li>
+          <li class="box-element">
             <a href=""
               ><img
                 src="./images/mobile.jpg"
@@ -109,7 +109,7 @@
             /></a>
             <p class="box">Мобильные приложения</p>
           </li>
-          <li>
+          <li class="box-element">
             <a href=""
               ><img
                 src="./images/desin.jpg"
@@ -123,12 +123,12 @@
         </div>
         
       </section>
-      <section class="section-team">
+      <section class="team-section">
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-          <li class="team">
-            <img src="./images/comand1.jpg" alt="Николай Кучеренко" />
+        <ul class="list team-flexcont">
+          <li class="team-element">
+            <img src="./images/comand1.jpg" alt="Николай Кучеренко" width="270" height="260"/>
             <h3 class="team-name">Николай Кучеренко</h3>
             <p class="team-prof">Product Designer</p>
             <p class="soc-team">
@@ -146,8 +146,8 @@
               /></a>
             </p>
           </li>
-          <li class="team">
-            <img src="./images/comand2.jpg" alt="Ольга Иванова" />
+          <li class="team-element">
+            <img src="./images/comand2.jpg" alt="Ольга Иванова" width="270" />
             <h3 class="team-name">Ольга Иванова</h3>
             <p class="team-prof">Frontend Developer</p>
             <p class="soc-team">
@@ -165,8 +165,8 @@
               /></a>
             </p>
           </li>
-          <li class="team">
-            <img src="./images/comand3.jpg" alt="Андрей Шевченко" />
+          <li class="team-element">
+            <img src="./images/comand3.jpg" alt="Андрей Шевченко" width="270" />
             <h3 class="team-name">Андрей Шевченко</h3>
             <p class="team-prof">Marketing</p>
             <p class="soc-team">
@@ -184,8 +184,8 @@
               /></a>
             </p>
           </li>
-          <li class="team">
-            <img src="./images/comand4.jpg" alt="Иван Николаев" />
+          <li class="team-element">
+            <img src="./images/comand4.jpg" alt="Иван Николаев" width="270" />
             <h3 class="team-name">Иван Николаев</h3>
             <p class="team-prof">UI Designer</p>
             <p class="soc-team">
@@ -206,27 +206,27 @@
         </ul>
         </div>
       </section>
-      <section>
+      <section class="client-section">
         <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul class="list">
-          <li>
-            <a href="/"><img src="./images/logo1.svg" alt="логотип1" /></a>
+        <ul class="list clnt-flexcont">
+          <li class="clnt-element">
+            <a href="/" class="link"><img src="./images/logo1.svg" alt="логотип1" class="imgcl" /></a>
           </li>
-          <li>
-            <a href=""><img src="./images/logo2.svg" alt="логотип2" /></a>
+          <li class="clnt-element">
+            <a href="" class="link"><img src="./images/logo2.svg" alt="логотип2" /></a>
           </li>
-          <li>
-            <a href=""><img src="./images/logo3.svg" alt="логотип3" /></a>
+          <li class="clnt-element">
+            <a href="" class="link"><img src="./images/logo3.svg" alt="логотип3" /></a>
           </li>
-          <li>
-            <a href=""><img src="./images/logo4.svg" alt="логотип4" /></a>
+          <li class="clnt-element">
+            <a href="" class="link"><img src="./images/logo4.svg" alt="логотип4" /></a>
           </li>
-          <li>
-            <a href=""><img src="./images/logo5.svg" alt="логотип5" /></a>
+          <li class="clnt-element">
+            <a href="" class="link"><img src="./images/logo5.svg" alt="логотип5" /></a>
           </li>
-          <li>
-            <a href=""><img src="./images/logo6.svg" alt="логотип6" /></a>
+          <li class="clnt-element">
+            <a href="" class="link"><img src="./images/logo6.svg" alt="логотип6" /></a>
           </li>
         </ul>
         
@@ -234,7 +234,8 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-flex">
+        <div class="footflex-elem">
       <a href="/"
         ><p class="logo footer-logo">
           <span class="web-logo">Web</span> Studio
@@ -255,24 +256,31 @@
           >
         </p>
       </address>
-      <section>
+      </div>
+      <section class="footflex-elem">
         <h3 class="footer-soc box">присоединяйтесь</h3>
-        <p>
+        <p class="footsoc-block">
           <a href="" aria-label="ссылка Insagram"
-            ><img src="./images/inst2.svg" alt="соцсеть"
+            ><img src="./images/inst2.svg" alt="соцсеть" class="socimg"
           /></a>
           <a href="" aria-label="ссылка Twitter"
-            ><img src="./images/twit2.svg" alt="соцсеть"
+            ><img src="./images/twit2.svg" alt="соцсеть" class="socimg"
           /></a>
           <a href="" aria-label="ссылка Facebook"
-            ><img src="./images/face2.svg" alt="соцсеть"
+            ><img src="./images/face2.svg" alt="соцсеть" class="socimg"
           /></a>
           <a href="" aria-label="ссылка Linkedin"
-            ><img src="./images/in2.svg" alt="соцсеть"
+            ><img src="./images/in2.svg" alt="соцсеть" class="socimg"
           /></a>
         </p>
       </section>
+      <section class="footflex-elem">
+        <h3 class="footer-registr box">Подпишитесь на рассылку</h3>
+        <a href="" class="footer-contacts mail-btn">E-mail</a>
+        <button class="btn">Подписаться <img src="./images/iconsend.svg" alt="бумажный самолетик" class="icon-send"></button>
+      </section>
       </div>
+      
     </footer>
   </body>
 </html>
